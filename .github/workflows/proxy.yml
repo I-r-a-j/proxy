@@ -24,13 +24,21 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run proxy script
+        id: run_script
         run: |
-          python update_proxies.py
+          python update_proxies.py | tee script_output.log
+
+      - name: Save clean report
+        run: |
+          echo "===== Run at $(date -u) =====" > reports.txt
+          # Extract summary lines only (Done + number of working proxies)
+          grep -E "🎉 Done!|🔍 Total unique proxies" script_output.log >> reports.txt
+          echo "" >> reports.txt
 
       - name: Commit & Push results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add working_proxies.txt
-          git commit -m "Update working proxies [skip ci]" || echo "No changes to commit"
+          git add working_proxies.txt reports.txt
+          git commit -m "Update working proxies + report [skip ci]" || echo "No changes to commit"
           git push
