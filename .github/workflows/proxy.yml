@@ -2,7 +2,7 @@ name: Update Proxies
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # Run every 10 minutes
+    - cron: "*/40 * * * *"   # Run every 40 minutes
   workflow_dispatch:         # Allow manual trigger from GitHub UI
 
 jobs:
