@@ -9,7 +9,15 @@ MAX_THREADS = 50
 
 # 🔽 Proxy list sources
 PROXY_URLS = [
+    "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt",
+    "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
+    "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
     "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
+    "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt",
+    "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
+    "https://raw.githubusercontent.com/hookzof/socks5_list/refs/heads/master/proxy.txt",
+    "https://raw.githubusercontent.com/shiftytr/proxy-list/master/proxy.txt",
+    "https://raw.githubusercontent.com/proxifly/free-proxy-list/refs/heads/main/proxies/all/data.txt"
 ]
 
 OUTPUT_FILE = "working_proxies.txt"
