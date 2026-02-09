@@ -9,7 +9,6 @@ MAX_THREADS = 50
 
 # 🔽 Proxy list sources
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/I-r-a-j/proxy/refs/heads/main/working_proxies.txt",
     "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt",
     "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
     "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
