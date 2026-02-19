@@ -1,4 +1,4 @@
-===== Run at Thu Feb 19 06:19:15 UTC 2026 =====
-🔍 Total unique proxies to test: 4942
-🎉 Done! 345 working proxies saved to 'working_proxies.txt'
+===== Run at Thu Feb 19 07:20:50 UTC 2026 =====
+🔍 Total unique proxies to test: 5025
+🎉 Done! 285 working proxies saved to 'working_proxies.txt'
 
